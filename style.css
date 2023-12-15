@@ -492,6 +492,7 @@ h3 {
 .comment-form button {
     margin: 10px 0;
 }
+
 @media (max-width:700px) {
     .sub-header h1 {
         font-size: 24px;
@@ -520,11 +521,13 @@ h3 {
     flex-basis: 48%;
     margin-bottom: 30px;
 }
+
 .contact-col div {
     display: flex;
     align-items: center;
     margin-bottom: 40px;
 }
+
 .contact-col div .fa {
     font-size: 28px;
     color: #f44336;
@@ -535,6 +538,7 @@ h3 {
 .contact-col div p {
     padding: 0;
 }
+
 .contact-col div h5 {
     font-size: 20px;
     margin-bottom: 5px;

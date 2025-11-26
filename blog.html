@@ -1,145 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>University Website Design - EXCEL</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="httpd://fonts.gstatic.com">
-    <link rel="icon" type="image/x-icon" href="Images/logo-removebg-preview.png">
-    <link href="https://fonts.googleapis.com/css2?
-    family=poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#111827">
+    <title>Elisaac Schools — Blog</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-
-<body>
-    <section class="sub-header">
-        <nav>
-            <a href="index.html"><img src="eduford_img/logo.png"></a>
-            <div class="nav-links" id="navLinks">
-                <i class="fa fa-times" onclick="hide()"></i>
-                <ul>
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="about.html">ABOUT</a></li>
-                    <li><a href="course.html">COURSE</a></li>
-                    <li><a href="blog.html">BLOG</a></li>
-                    <li><a href="contact.html">CONTACT</a></li>
-                </ul>
+<body class="min-h-screen bg-gray-50 text-gray-800">
+    <header class="sticky top-0 z-40 backdrop-blur bg-white/80 border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <a href="index.html" class="flex items-center gap-2">
+                    <img src="eduford_img/logo.png" alt="Elisaac Schools" class="h-9 w-9 object-contain">
+                    <span class="font-semibold text-gray-900">Elisaac Schools</span>
+                </a>
+                <nav class="hidden md:flex items-center gap-6" aria-label="Primary">
+                    <a href="index.html" class="text-gray-700 hover:text-brand-600">Home</a>
+                    <a href="about.html" class="text-gray-700 hover:text-brand-600">About</a>
+                    <a href="course.html" class="text-gray-700 hover:text-brand-600">Programs</a>
+                    <a href="blog.html" class="text-gray-900 font-semibold">News</a>
+                    <a href="contact.html" class="inline-flex items-center rounded-md bg-brand-600 px-3 py-2 text-white hover:bg-brand-700">Contact</a>
+                </nav>
+                <button id="mobileMenuBtn" class="md:hidden inline-flex items-center justify-center rounded-md p-2 text-gray-700 hover:bg-gray-100 focus:outline-none" aria-label="Open menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-6 w-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5M3.75 17.25h16.5" />
+                    </svg>
+                </button>
             </div>
-            <i class="fa fa-bars" onclick="show()"></i>
-        </nav>
-        <h1>Our Certificate & Online Programs For 2021</h1>
-    </section>
-    <!------- blog page content ------->
+        </div>
+        <div id="mobileMenu" class="md:hidden hidden border-t border-gray-200 bg-white/95 backdrop-blur-sm">
+            <nav class="px-4 py-4 flex flex-col gap-4" aria-label="Mobile">
+                <a href="index.html" class="text-gray-700 hover:text-brand-600">Home</a>
+                <a href="about.html" class="text-gray-700 hover:text-brand-600">About</a>
+                <a href="course.html" class="text-gray-700 hover:text-brand-600">Programs</a>
+                <a href="blog.html" class="text-gray-900 font-semibold">News</a>
+                <a href="contact.html" class="inline-flex items-center rounded-md bg-brand-600 px-3 py-2 text-white hover:bg-brand-700 w-max">Contact</a>
+            </nav>
+        </div>
+    </header>
 
-    <section class="blog-content">
+        <main class="py-12 space-y-20">
+            <!-- Featured Article -->
+            <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid lg:grid-cols-3 gap-10">
+                    <article class="lg:col-span-2">
+                        <div class="relative h-[340px] sm:h-[420px]">
+                            <img src="Images/IMG_20230731_092334_117.jpg" alt="Campus event" class="absolute inset-0 h-full w-full rounded-xl shadow-lg ring-1 ring-gray-200 object-cover" loading="lazy">
+                        </div>
+                        <h1 class="mt-6 text-3xl font-bold text-gray-900">Campus Innovation & Learning Beyond the Classroom</h1>
+                        <div class="prose max-w-none prose-indigo mt-4">
+                            <p>Our learning culture extends beyond classroom walls—projects, clubs and community engagement foster real‑world skills and purpose.</p>
+                            <p>Hands‑on STEM sessions and reading circles build confidence, curiosity, and collaboration.</p>
+                            <p>Faith and character reflections encourage gratitude, empathy and service among peers.</p>
+                        </div>
+                        <section class="mt-10 rounded-xl border border-gray-200 bg-white p-6 shadow-sm">
+                            <h2 class="text-xl font-semibold text-gray-900">Leave a comment</h2>
+                            <form class="mt-4 grid gap-4">
+                                <input type="text" placeholder="Enter Name" class="rounded-md border border-gray-300 px-3 py-2">
+                                <input type="email" placeholder="Enter Email" class="rounded-md border border-gray-300 px-3 py-2">
+                                <textarea rows="5" placeholder="Your comment" class="rounded-md border border-gray-300 px-3 py-2"></textarea>
+                                <button type="submit" class="inline-flex items-center rounded-md bg-brand-600 px-4 py-2 text-white hover:bg-brand-700">Post Comment</button>
+                            </form>
+                        </section>
+                    </article>
+                    <aside class="lg:col-span-1">
+                        <div class="rounded-xl border border-gray-200 bg-white p-6 shadow-sm">
+                            <h3 class="text-lg font-semibold text-gray-900">Categories</h3>
+                            <ul class="mt-4 space-y-3 text-gray-700 text-sm">
+                                <li class="flex justify-between"><span>School Events</span><span>12</span></li>
+                                <li class="flex justify-between"><span>STEM Projects</span><span>8</span></li>
+                                <li class="flex justify-between"><span>Arts & Culture</span><span>5</span></li>
+                                <li class="flex justify-between"><span>Leadership</span><span>4</span></li>
+                                <li class="flex justify-between"><span>Parent Corner</span><span>6</span></li>
+                            </ul>
+                        </div>
+                    </aside>
+                </div>
+            </section>
 
-        <div class="row">
-            <div class="blog-left">
-                <img src="eduford_img/certificate.jpg">
-                <h2>Our Certificate & Online Programs For 2021</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Odio fuga blanditiis quidem iusto minima sint?
-                    Saepe ab cupiditate dolores quam. Perspiciatis, eaque suscipit? Totam,
-                    eligendi similique doloribus assumenda fuga
-                    consequuntur in incidunt quod tempora est.</p>
-                <br>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Odio fuga blanditiis quidem iusto minima sint?
-                    Saepe ab cupiditate dolores quam. Perspiciatis, eaque suscipit? Totam,
-                    eligendi similique doloribus assumenda fuga
-                    consequuntur in incidunt quod tempora est.</p>
-                <br>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Odio fuga blanditiis quidem iusto minima sint?
-                    Saepe ab cupiditate dolores quam. Perspiciatis, eaque suscipit? Totam,
-                    eligendi similique doloribus assumenda fuga
-                    consequuntur in incidunt quod tempora est.</p>
-                <br>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Odio fuga blanditiis quidem iusto minima sint?
-                    Saepe ab cupiditate dolores quam. Perspiciatis, eaque suscipit? Totam,
-                    eligendi similique doloribus assumenda fuga
-                    consequuntur in incidunt quod tempora est.</p>
-                    
-
-
-
-                    <div class="comment-box">
-                        <h3>Leave a comment</h3>
-                        <form class="comment-form">
-                            <input type="text" placeholder="Enter Name">
-                            <input type="email" placeholder="Enter Email">
-                            <textarea rows="5" placeholder="Your comment">
-                            </textarea>
-                            <button type="submit" class="hero-btn red-btn">POST COMMENT</button>
-                        </form>
+            <!-- Latest Posts Grid -->
+            <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-2xl font-bold text-gray-900 mb-6">Latest Highlights</h2>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="rounded-xl border border-gray-200 bg-white p-5 shadow-sm flex flex-col">
+                        <img src="Images/IMG_20230705_130215_371.jpg" alt="Reading initiative" class="h-40 w-full object-cover rounded-md mb-4" loading="lazy">
+                        <h3 class="font-semibold text-gray-900">Reading Marathon Week</h3>
+                        <p class="mt-2 text-sm text-gray-700 flex-grow">Pupils log pages, share book talks and celebrate literacy growth.</p>
+                        <a href="#" class="mt-4 text-brand-600 text-sm font-medium hover:underline">Read more →</a>
+                    </div>
+                    <div class="rounded-xl border border-gray-200 bg-white p-5 shadow-sm flex flex-col">
+                        <img src="Images/IMG_20230705_125232_086.jpg" alt="Outdoor play" class="h-40 w-full object-cover rounded-md mb-4" loading="lazy">
+                        <h3 class="font-semibold text-gray-900">Inter‑House Sports Prep</h3>
+                        <p class="mt-2 text-sm text-gray-700 flex-grow">Team spirit grows as students train for track and field events.</p>
+                        <a href="#" class="mt-4 text-brand-600 text-sm font-medium hover:underline">Read more →</a>
+                    </div>
+                    <div class="rounded-xl border border-gray-200 bg-white p-5 shadow-sm flex flex-col">
+                        <img src="Images/IMG_20230705_132106_192.jpg" alt="Healthy meals" class="h-40 w-full object-cover rounded-md mb-4" loading="lazy">
+                        <h3 class="font-semibold text-gray-900">Nutrition & Wellbeing Day</h3>
+                        <p class="mt-2 text-sm text-gray-700 flex-grow">Talks on balanced diets and smart energy choices for learners.</p>
+                        <a href="#" class="mt-4 text-brand-600 text-sm font-medium hover:underline">Read more →</a>
                     </div>
                 </div>
-            <div class="blog-right">
-                <h3>Post Categories</h3>
-                <div>
-                    <span>Business Analytics</span>
-                    <span>21</span>
+            </section>
+
+            <!-- Parent Corner -->
+            <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="rounded-xl border border-gray-200 bg-white p-8 shadow-sm">
+                    <h2 class="text-2xl font-bold text-gray-900">Parent Corner</h2>
+                    <p class="mt-4 text-gray-700 max-w-3xl">We partner with families through regular updates, open forums and guidance sessions. Strong home–school collaboration accelerates learner growth.</p>
+                    <div class="mt-6 grid md:grid-cols-3 gap-6 text-sm text-gray-700">
+                        <div class="space-y-2">
+                            <h3 class="font-semibold text-gray-900">Communication</h3>
+                            <p>Weekly summaries & progress notes.</p>
+                        </div>
+                        <div class="space-y-2">
+                            <h3 class="font-semibold text-gray-900">Workshops</h3>
+                            <p>Study skills & digital safety sessions.</p>
+                        </div>
+                        <div class="space-y-2">
+                            <h3 class="font-semibold text-gray-900">Support</h3>
+                            <p>Goal setting & advisory meetings.</p>
+                        </div>
+                    </div>
+                    <a href="contact.html" class="mt-8 inline-flex items-center rounded-md bg-brand-600 px-5 py-3 text-white font-medium hover:bg-brand-700">Connect With Us</a>
                 </div>
+            </section>
+        </main>
+
+    <footer class="border-t border-gray-200 bg-white mt-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+            <div class="flex flex-col md:flex-row justify-between gap-6">
                 <div>
-                    <span>Data Science</span>
-                    <span>28</span>
+                    <p class="font-semibold text-gray-900">Elisaac Schools</p>
+                    <p class="mt-1 text-gray-600">Shaping tomorrow's leaders today.</p>
                 </div>
-                <div>
-                    <span>Machine Learning</span>
-                    <span>19</span>
-                </div>
-                <div>
-                    <span>Computer Science</span>
-                    <span>17</span>
-                </div>
-                <div>
-                    <span>AutoCAD</span>
-                    <span>43</span>
-                </div>
-                <div>
-                    <span>Journalism</span>
-                    <span>36</span>
-                </div>
-                <div>
-                    <span>Commerce</span>
-                    <span>11</span>
-                </div>
+                <div class="text-gray-600">© <span id="year"></span> Elisaac Schools. All rights reserved.</div>
             </div>
         </div>
-
-    </section>
-
-
-
-    <!------- Footer ------->
-    <section class="footer">
-        <h4>About Us</h4>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing
-            elier Blanditiis officiis fugiat suscipit praesentium<br>
-            recusandae culpa omnis, expedita aut sapiente doloremque
-        </p>
-        <div class="icons">
-            <i class="fa fa-facebook"></i>
-            <i class="fa fa-twitter"></i>
-            <i class="fa fa-instagram"></i>
-            <i class="fa fa-linkedin"></i>
-        </div>
-        <p>Made with <i class="fa fa-heart-o"></i> by Excel</p>
-    </section>
-
-    <!--------JavaScript for Toggle Menu-------->
+    </footer>
     <script>
-        var navLinks = document.getElementById("navLinks");
-        function show() {
-            navLinks.style.right = "0"
-        }
-        function hide() {
-            navLinks.style.right = "-200px"
-        }
+        document.getElementById('year').textContent = new Date().getFullYear();
+        const btn = document.getElementById('mobileMenuBtn');
+        const menu = document.getElementById('mobileMenu');
+        btn?.addEventListener('click', () => menu.classList.toggle('hidden'));
     </script>
 </body>
-
 </html>

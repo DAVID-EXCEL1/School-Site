@@ -1,113 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>University Website Design - EXCEL</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="httpd://fonts.gstatic.com">
-    <link rel="icon" type="image/x-icon" href="Images/logo-removebg-preview.png">
-    <link href="https://fonts.googleapis.com/css2?
-    family=poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#111827">
+    <title>Elisaac Schools — Contact</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-
-<body>
-    <section class="sub-header">
-        <nav>
-            <a href="index.html"><img src="eduford_img/logo.png"></a>
-            <div class="nav-links" id="navLinks">
-                <i class="fa fa-times" onclick="hide()"></i>
-                <ul>
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="about.html">ABOUT</a></li>
-                    <li><a href="course.html">COURSE</a></li>
-                    <li><a href="blog.html">BLOG</a></li>
-                    <li><a href="contact.html">CONTACT</a></li>
-                </ul>
-            </div>
-            <i class="fa fa-bars" onclick="show()"></i>
-        </nav>
-        <h1>Contact Us</h1>
-    </section>
-    <!------- contact us ------->
-
-    <section class="location">
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3956.109292010044!2d4.017108600000001!3d7.453159800000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1039eb8945d6fa19%3A0x9d9538ed9e52faac!2zQ0FDIMOSS8OIIEFHQsOBUkEsIFBBR1VOLCBPTE9ETywgw4xX4buMLVJPQUQsIElCQURBTg!5e0!3m2!1sen!2sng!4v1700579010570!5m2!1sen!2sng"
-            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </section>
-
-
-    <section class="contact-us">
-
-        <div class="row">
-            <div class="contact-col">
-                <div>
-                    <i class="fa fa-home"></i>
-                    <span>
-                        <h5>XYZ Road, ABC Building</h5>
-                        <p>Ogunloke-Odo Olodo Ibadan</p>
-                    </span>
-                </div>
-                <div>
-                    <i class="fa fa-phone"></i>
-                    <span>
-                        <h5>+234 9018170587</h5>
-                        <p>Monday to Saturday, 10AM to 6pm</p>
-                    </span>
-                </div>
-                <div>
-                    <i class="fa fa-envelope-o"></i>
-                    <span>
-                        <h5>davidsome2004@gmail.com</h5>
-                        <p>Email us Your Query</p>
-                    </span>
-                </div>
-            </div>
-            <div class="contact-col">
-
-                <form action="form-handler.php" method="post">
-                    <input type="text" name="name" placeholder="Enter your name" required>
-                    <input type="email" name="email" placeholder="Enter email address" required>
-                    <input type="text" name="subject" placeholder="Enter your subject" required>
-                    <textarea rows="8" name="message" placeholder="Message" required></textarea>
-                    <button type="submit" class="hero-btn red-btn">Send Message</button>
-                </form>
-
+<body class="min-h-screen bg-gray-50 text-gray-800">
+    <header class="sticky top-0 z-40 backdrop-blur bg-white/80 border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <a href="index.html" class="flex items-center gap-2">
+                    <img src="eduford_img/logo.png" alt="Elisaac Schools" class="h-9 w-9 object-contain">
+                    <span class="font-semibold text-gray-900">Elisaac Schools</span>
+                </a>
+                <nav class="hidden md:flex items-center gap-6" aria-label="Primary">
+                    <a href="index.html" class="text-gray-700 hover:text-brand-600">Home</a>
+                    <a href="about.html" class="text-gray-700 hover:text-brand-600">About</a>
+                    <a href="course.html" class="text-gray-700 hover:text-brand-600">Programs</a>
+                    <a href="blog.html" class="text-gray-700 hover:text-brand-600">News</a>
+                    <a href="contact.html" class="text-gray-900 font-semibold">Contact</a>
+                </nav>
+                <button id="mobileMenuBtn" class="md:hidden inline-flex items-center justify-center rounded-md p-2 text-gray-700 hover:bg-gray-100 focus:outline-none" aria-label="Open menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-6 w-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5M3.75 17.25h16.5" />
+                    </svg>
+                </button>
             </div>
         </div>
-
-    </section>
-
-    <!------- Footer ------->
-    <section class="footer">
-        <h4>About Us</h4>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing
-            elier Blanditiis officiis fugiat suscipit praesentium<br>
-            recusandae culpa omnis, expedita aut sapiente doloremque
-        </p>
-        <div class="icons">
-            <i class="fa fa-facebook"></i>
-            <i class="fa fa-twitter"></i>
-            <i class="fa fa-instagram"></i>
-            <i class="fa fa-linkedin"></i>
+        <div id="mobileMenu" class="md:hidden hidden border-t border-gray-200 bg-white/95 backdrop-blur-sm">
+            <nav class="px-4 py-4 flex flex-col gap-4" aria-label="Mobile">
+                <a href="index.html" class="text-gray-700 hover:text-brand-600">Home</a>
+                <a href="about.html" class="text-gray-700 hover:text-brand-600">About</a>
+                <a href="course.html" class="text-gray-700 hover:text-brand-600">Programs</a>
+                <a href="blog.html" class="text-gray-700 hover:text-brand-600">News</a>
+                <a href="contact.html" class="text-gray-900 font-semibold">Contact</a>
+            </nav>
         </div>
-        <p>Made with <i class="fa fa-heart-o"></i> by Excel</p>
-    </section>
+    </header>
 
-    <!--------JavaScript for Toggle Menu-------->
+    <main class="py-12">
+        <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h1 class="text-3xl font-bold text-gray-900">Contact Us</h1>
+            <div class="mt-8 grid lg:grid-cols-2 gap-10">
+                <div class="rounded-xl overflow-hidden">
+                    <div class="relative h-[340px] sm:h-[420px]">
+                        <iframe class="absolute inset-0 w-full h-full rounded-xl" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3956.109292010044!2d4.017108600000001!3d7.453159800000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1039eb8945d6fa19%3A0x9d9538ed9e52faac!2zQ0FDIMOSS8OIIEFHQsOBUkEsIFBBR1VOLCBPTE9ETywgw4xX4buMLVJPQUQsIElCQURBTg!5e0!3m2!1sen!2sng!4v1700579010570!5m2!1sen!2sng" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="mt-6 space-y-4">
+                        <div class="flex items-start gap-3">
+                            <span class="inline-flex h-10 w-10 items-center justify-center rounded-lg bg-brand-100 text-brand-700">🏫</span>
+                            <div>
+                                <p class="font-semibold text-gray-900">XYZ Road, ABC Building</p>
+                                <p class="text-gray-700">Ogunloke-Odo Olodo Ibadan</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <span class="inline-flex h-10 w-10 items-center justify-center rounded-lg bg-brand-100 text-brand-700">📞</span>
+                            <div>
+                                <p class="font-semibold text-gray-900">+234 9018170587</p>
+                                <p class="text-gray-700">Mon–Sat, 10AM–6PM</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <span class="inline-flex h-10 w-10 items-center justify-center rounded-lg bg-brand-100 text-brand-700">✉️</span>
+                            <div>
+                                <p class="font-semibold text-gray-900">davidsome2004@gmail.com</p>
+                                <p class="text-gray-700">Email us your query</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <form action="form-handler.php" method="post" class="grid gap-4">
+                        <input type="text" name="name" placeholder="Enter your name" required class="rounded-md border border-gray-300 px-3 py-2">
+                        <input type="email" name="email" placeholder="Enter email address" required class="rounded-md border border-gray-300 px-3 py-2">
+                        <input type="text" name="subject" placeholder="Enter your subject" required class="rounded-md border border-gray-300 px-3 py-2">
+                        <textarea rows="8" name="message" placeholder="Message" required class="rounded-md border border-gray-300 px-3 py-2"></textarea>
+                        <button type="submit" class="inline-flex items-center rounded-md bg-brand-600 px-4 py-2 text-white hover:bg-brand-700">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="border-t border-gray-200 bg-white mt-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+            <div class="flex flex-col md:flex-row justify-between gap-6">
+                <div>
+                    <p class="font-semibold text-gray-900">Elisaac Schools</p>
+                    <p class="mt-1 text-gray-600">Shaping tomorrow's leaders today.</p>
+                </div>
+                <div class="text-gray-600">© <span id="year"></span> Elisaac Schools. All rights reserved.</div>
+            </div>
+        </div>
+    </footer>
     <script>
-        var navLinks = document.getElementById("navLinks");
-        function show() {
-            navLinks.style.right = "0"
-        }
-        function hide() {
-            navLinks.style.right = "-200px"
-        }
+        document.getElementById('year').textContent = new Date().getFullYear();
+        const btn = document.getElementById('mobileMenuBtn');
+        const menu = document.getElementById('mobileMenu');
+        btn?.addEventListener('click', () => menu.classList.toggle('hidden'));
     </script>
 </body>
-
 </html>

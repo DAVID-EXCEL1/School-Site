@@ -12,76 +12,156 @@
     family=poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-
-<body>
-    <section class="sub-header">
-        <nav>
-            <a href="index.html"><img src="eduford_img/logo.png"></a>
-            <div class="nav-links" id="navLinks">
-                <i class="fa fa-times" onclick="hide()"></i>
-                <ul>
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="about.html">ABOUT</a></li>
-                    <li><a href="course.html">COURSE</a></li>
-                    <li><a href="blog.html">BLOG</a></li>
-                    <li><a href="contact.html">CONTACT</a></li>
-                </ul>
-            </div>
-            <i class="fa fa-bars" onclick="show()"></i>
-        </nav>
-        <h1>ABOUT US</h1>
-    </section>
-
-    <!------- about us content ------>
-
-    <section class="about-us">
-        <div class="row">
-            <div class="about-col">
-                <h1>We are the world's largest university</h1>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing 
-                    elit. Non quas maiores illo sit aut reiciendis
-                    perferendis odit quibusdam rem. Enim voluptatibus quas
-                    eaque facere nihil delectus iste assumenda,
-                    minima asperiores distinctio quaerat facilis reprehenderit 
-                    ex necessitatibus molestias, dolorem quoscupiditate.
-                </p>
-                <a href="" class="hero-btn red-btn">EXPLORE NOW</a>
-            </div>
-            <div class="about-col">
-                <img src="eduford_img/about.jpg">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#111827">
+    <title>Elisaac Schools — About</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen bg-gray-50 text-gray-800">
+    <header class="sticky top-0 z-40 backdrop-blur bg-white/80 border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <a href="index.html" class="flex items-center gap-2">
+                    <img src="eduford_img/logo.png" alt="Elisaac Schools" class="h-9 w-9 object-contain">
+                    <span class="font-semibold text-gray-900">Elisaac Schools</span>
+                </a>
+                <nav class="hidden md:flex items-center gap-6" aria-label="Primary">
+                    <a href="index.html" class="text-gray-700 hover:text-brand-600">Home</a>
+                    <a href="about.html" class="text-gray-900 font-semibold">About</a>
+                    <a href="course.html" class="text-gray-700 hover:text-brand-600">Programs</a>
+                    <a href="blog.html" class="text-gray-700 hover:text-brand-600">News</a>
+                    <a href="contact.html" class="inline-flex items-center rounded-md bg-brand-600 px-3 py-2 text-white hover:bg-brand-700">Contact</a>
+                </nav>
+                <button id="mobileMenuBtn" class="md:hidden inline-flex items-center justify-center rounded-md p-2 text-gray-700 hover:bg-gray-100 focus:outline-none" aria-label="Open menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-6 w-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5M3.75 17.25h16.5" />
+                    </svg>
+                </button>
             </div>
         </div>
-    </section>
-
-
-
-
-    <!------- Footer ------->
-    <section class="footer">
-        <h4>About Us</h4>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing
-            elier Blanditiis officiis fugiat suscipit praesentium<br>
-            recusandae culpa omnis, expedita aut sapiente doloremque
-        </p>
-        <div class="icons">
-            <i class="fa fa-facebook"></i>
-            <i class="fa fa-twitter"></i>
-            <i class="fa fa-instagram"></i>
-            <i class="fa fa-linkedin"></i>
+        <div id="mobileMenu" class="md:hidden hidden border-t border-gray-200 bg-white/95 backdrop-blur-sm">
+            <nav class="px-4 py-4 flex flex-col gap-4" aria-label="Mobile">
+                <a href="index.html" class="text-gray-700 hover:text-brand-600">Home</a>
+                <a href="about.html" class="text-gray-900 font-semibold">About</a>
+                <a href="course.html" class="text-gray-700 hover:text-brand-600">Programs</a>
+                <a href="blog.html" class="text-gray-700 hover:text-brand-600">News</a>
+                <a href="contact.html" class="inline-flex items-center rounded-md bg-brand-600 px-3 py-2 text-white hover:bg-brand-700 w-max">Contact</a>
+            </nav>
         </div>
-        <p>Made with <i class="fa fa-heart-o"></i> by Excel</p>
-    </section>
+    </header>
 
-    <!--------JavaScript for Toggle Menu-------->
+        <main class="py-12 space-y-20">
+            <!-- Intro / Mission -->
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid lg:grid-cols-2 gap-10 items-start">
+                    <div>
+                        <h1 class="text-3xl font-bold text-gray-900">About Elisaac Schools</h1>
+                        <p class="mt-4 text-gray-700">A faith-rooted primary and secondary learning community committed to academic excellence, character formation, and joyful discovery.</p>
+                        <div class="mt-8 grid md:grid-cols-2 gap-6">
+                            <div class="rounded-xl border border-gray-200 bg-white p-6 shadow-sm">
+                                <h2 class="text-xl font-semibold text-gray-900">Our Mission</h2>
+                                <p class="mt-2 text-gray-700">Inspire lifelong learning while building strong spiritual, moral and academic foundations.</p>
+                            </div>
+                            <div class="rounded-xl border border-gray-200 bg-white p-6 shadow-sm">
+                                <h2 class="text-xl font-semibold text-gray-900">Our Values</h2>
+                                <p class="mt-2 text-gray-700">Kindness, integrity, curiosity, resilience, service and faith guide every interaction.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative h-[360px] sm:h-[420px]">
+                        <img src="Images/IMG_20230803_093421_561.jpg" alt="Students collaborating" class="absolute inset-0 h-full w-full rounded-xl shadow-lg ring-1 ring-gray-200 object-cover" loading="lazy">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Philosophy & Approach -->
+            <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="rounded-2xl bg-gradient-to-br from-brand-50 via-white to-brand-100 p-8 lg:p-12 ring-1 ring-brand-100">
+                    <h2 class="text-2xl font-bold text-gray-900">Our Philosophy & Approach</h2>
+                    <p class="mt-4 text-gray-700 max-w-3xl">We believe every child is uniquely gifted. Learning at Elisaac blends rigorous academics with creativity, service, and spiritual growth. Lessons emphasize problem solving, collaboration, and real‑world relevance so learners connect knowledge to purpose.</p>
+                    <div class="mt-8 grid md:grid-cols-3 gap-6">
+                        <div class="rounded-xl bg-white border border-gray-200 p-6 shadow-sm">
+                            <h3 class="font-semibold text-gray-900">Holistic Development</h3>
+                            <p class="mt-2 text-sm text-gray-700">Academic, social-emotional, physical and spiritual growth planned intentionally.</p>
+                        </div>
+                        <div class="rounded-xl bg-white border border-gray-200 p-6 shadow-sm">
+                            <h3 class="font-semibold text-gray-900">Active Learning</h3>
+                            <p class="mt-2 text-sm text-gray-700">Projects, debates, labs and guided inquiry energize curiosity.</p>
+                        </div>
+                        <div class="rounded-xl bg-white border border-gray-200 p-6 shadow-sm">
+                            <h3 class="font-semibold text-gray-900">Faith & Character</h3>
+                            <p class="mt-2 text-sm text-gray-700">Daily routines reinforce respect, service, gratitude and responsibility.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Community & Partnership -->
+            <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid lg:grid-cols-2 gap-10 items-stretch">
+                    <div class="rounded-xl border border-gray-200 bg-white p-8 shadow-sm flex flex-col justify-between">
+                        <div>
+                            <h2 class="text-2xl font-bold text-gray-900">Community & Partnership</h2>
+                            <p class="mt-4 text-gray-700">Families, teachers, and students collaborate through open days, goal conferences, service projects and celebration assemblies.</p>
+                            <ul class="mt-6 space-y-3 text-sm text-gray-700 list-disc list-inside">
+                                <li>Weekly family updates & progress insights</li>
+                                <li>Open classroom showcase days</li>
+                                <li>Service & outreach initiatives</li>
+                                <li>Student leadership councils</li>
+                            </ul>
+                        </div>
+                        <a href="contact.html" class="mt-8 inline-flex items-center rounded-md bg-brand-600 px-5 py-3 text-white font-medium hover:bg-brand-700 w-max">Partner With Us</a>
+                    </div>
+                    <div class="rounded-xl border border-gray-200 bg-white p-8 shadow-sm">
+                        <h2 class="text-2xl font-bold text-gray-900">Growth Timeline</h2>
+                        <div class="mt-6 space-y-5">
+                            <div class="flex gap-4">
+                                <div class="flex-shrink-0 h-10 w-10 rounded-full bg-brand-600 text-white flex items-center justify-center font-semibold">1</div>
+                                <div>
+                                    <p class="font-semibold text-gray-900">Foundation</p>
+                                    <p class="text-sm text-gray-700">Established vision for faith-driven holistic education.</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-4">
+                                <div class="flex-shrink-0 h-10 w-10 rounded-full bg-brand-600 text-white flex items-center justify-center font-semibold">2</div>
+                                <div>
+                                    <p class="font-semibold text-gray-900">Expansion</p>
+                                    <p class="text-sm text-gray-700">Added labs, reading hubs, clubs and arts program.</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-4">
+                                <div class="flex-shrink-0 h-10 w-10 rounded-full bg-brand-600 text-white flex items-center justify-center font-semibold">3</div>
+                                <div>
+                                    <p class="font-semibold text-gray-900">Future Focus</p>
+                                    <p class="text-sm text-gray-700">Enhancing digital learning, mentorship and community outreach.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+    <footer class="border-t border-gray-200 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+            <div class="flex flex-col md:flex-row justify-between gap-6">
+                <div>
+                    <p class="font-semibold text-gray-900">Elisaac Schools</p>
+                    <p class="mt-1 text-gray-600">Shaping tomorrow's leaders today.</p>
+                </div>
+                <div class="text-gray-600">© <span id="year"></span> Elisaac Schools. All rights reserved.</div>
+            </div>
+        </div>
+    </footer>
     <script>
-        var navLinks = document.getElementById("navLinks");
-        function show() {
-            navLinks.style.right = "0"
-        }
-        function hide() {
-            navLinks.style.right = "-200px"
-        }
+        document.getElementById('year').textContent = new Date().getFullYear();
+        const btn = document.getElementById('mobileMenuBtn');
+        const menu = document.getElementById('mobileMenu');
+        btn?.addEventListener('click', () => menu.classList.toggle('hidden'));
     </script>
 </body>
-
 </html>

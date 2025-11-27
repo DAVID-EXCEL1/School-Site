@@ -1,40 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#111827">
     <title>Elisaac Schools — Home</title>
+    <link rel="icon" type="image/svg+xml" href="Images/elisaac-logo.svg">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
     <script>
-            tailwind.config = {
-                theme: {
-                    extend: {
-                        colors: {
-                            brand: {
-                                50: '#eff6ff',
-                100: '#dbeafe',
-                200: '#bfdbfe',
-                300: '#93c5fd',
-                400: '#60a5fa',
-                500: '#3b82f6',
-                600: '#2563eb',
-                700: '#1d4ed8',
-                800: '#1e40af',
-                900: '#1e3a8a',
-                            }
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#eff6ff',
+                            100: '#dbeafe',
+                            200: '#bfdbfe',
+                            300: '#93c5fd',
+                            400: '#60a5fa',
+                            500: '#3b82f6',
+                            600: '#2563eb',
+                            700: '#1d4ed8',
+                            800: '#1e40af',
+                            900: '#1e3a8a',
                         }
                     }
                 }
             }
-        </script>
+        }
+    </script>
 </head>
+
 <body class="min-h-screen bg-gray-50 text-gray-800">
     <header class="sticky top-0 z-40 backdrop-blur bg-white/80 border-b border-gray-200">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-16">
                 <a href="index.html" class="flex items-center gap-2">
-                    <img src="eduford_img/logo.png" alt="Elisaac Schools" class="h-9 w-9 object-contain">
+                      <img src="Images/elisaac-logo.svg" alt="Elisaac Schools" class="h-10 w-10 object-contain">
                     <span class="font-semibold text-gray-900">Elisaac Schools</span>
                 </a>
                 <nav class="hidden md:flex items-center gap-6" aria-label="Primary">
@@ -42,11 +46,16 @@
                     <a href="about.html" class="text-gray-700 hover:text-brand-600">About</a>
                     <a href="course.html" class="text-gray-700 hover:text-brand-600">Programs</a>
                     <a href="blog.html" class="text-gray-700 hover:text-brand-600">News</a>
-                    <a href="contact.html" class="inline-flex items-center rounded-md bg-brand-600 px-3 py-2 text-white hover:bg-brand-700">Contact</a>
+                    <a href="contact.html"
+                        class="inline-flex items-center rounded-md bg-brand-600 px-3 py-2 text-white hover:bg-brand-700">Contact</a>
                 </nav>
-                <button id="mobileMenuBtn" class="md:hidden inline-flex items-center justify-center rounded-md p-2 text-gray-700 hover:bg-gray-100 focus:outline-none" aria-label="Open menu">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-6 w-6">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5M3.75 17.25h16.5" />
+                <button id="mobileMenuBtn"
+                    class="md:hidden inline-flex items-center justify-center rounded-md p-2 text-gray-700 hover:bg-gray-100 focus:outline-none"
+                    aria-label="Open menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="h-6 w-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M3.75 6.75h16.5M3.75 12h16.5M3.75 17.25h16.5" />
                     </svg>
                 </button>
             </div>
@@ -57,7 +66,8 @@
                 <a href="about.html" class="text-gray-700 hover:text-brand-600">About</a>
                 <a href="course.html" class="text-gray-700 hover:text-brand-600">Programs</a>
                 <a href="blog.html" class="text-gray-700 hover:text-brand-600">News</a>
-                <a href="contact.html" class="inline-flex items-center rounded-md bg-brand-600 px-3 py-2 text-white hover:bg-brand-700 w-max">Contact</a>
+                <a href="contact.html"
+                    class="inline-flex items-center rounded-md bg-brand-600 px-3 py-2 text-white hover:bg-brand-700 w-max">Contact</a>
             </nav>
         </div>
     </header>
@@ -68,39 +78,57 @@
             <div class="absolute inset-0 bg-gradient-to-br from-brand-50 via-white to-brand-100"></div>
             <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-28">
                 <div class="grid lg:grid-cols-2 gap-10 items-center">
-                    <div>
-                        <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-gray-900">A Caring K–12 Community</h1>
-                        <p class="mt-6 text-lg text-gray-700">Elisaac Schools is a primary and secondary school where curiosity thrives, character is nurtured, and learners build strong foundations from Early Years through Senior Secondary.</p>
+                    <div data-aos="fade-up">
+                        <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-gray-900">
+                            Inspiring Bright Futures Nursery, Primary & Secondary</h1>
+                        <p class="mt-6 text-lg text-gray-700">A nurturing community where students from Nursery through Secondary build strong academic foundations, develop character, and gain essential life skills for success.</p>
                         <div class="mt-8 flex gap-4">
-                            <a href="course.html" class="inline-flex items-center rounded-md bg-brand-600 px-5 py-3 text-white shadow-sm hover:bg-brand-700">Explore Courses</a>
-                            <a href="about.html" class="inline-flex items-center rounded-md border border-gray-300 px-5 py-3 text-gray-800 hover:bg-gray-100">Learn More</a>
+                            <a href="course.html"
+                                class="inline-flex items-center rounded-md bg-brand-600 px-5 py-3 text-white shadow-sm hover:bg-brand-700">Explore
+                                Courses</a>
+                            <a href="about.html"
+                                class="inline-flex items-center rounded-md border border-gray-300 px-5 py-3 text-gray-800 hover:bg-gray-100">Learn
+                                More</a>
                         </div>
                     </div>
-                    <div class="relative h-[340px] sm:h-[420px] lg:h-[500px]">
-                        <img src="Images/IMG_20230805_160510_807.jpg" alt="Happy students at Elisaac Schools" class="absolute inset-0 h-full w-full rounded-xl shadow-lg ring-1 ring-gray-200 object-cover" loading="lazy">
+                    <div class="relative h-[340px] sm:h-[420px] lg:h-[500px]" data-aos="zoom-in">
+                        <img src="Images/IMG_20230805_160510_807.jpg" alt="Happy students at Elisaac Schools"
+                            class="absolute inset-0 h-full w-full rounded-xl shadow-lg ring-1 ring-gray-200 object-cover"
+                            loading="lazy">
                     </div>
                 </div>
             </div>
         </section>
 
-    <!-- Features -->
+        <!-- Features -->
         <section class="py-16">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="grid md:grid-cols-3 gap-8">
-                    <div class="rounded-xl border border-gray-200 bg-white p-6 shadow-sm">
-                        <div class="h-12 w-12 rounded-lg bg-brand-100 text-brand-700 flex items-center justify-center font-semibold">A+</div>
+                    <div class="rounded-xl border border-gray-200 bg-white p-6 shadow-sm" data-aos="fade-up">
+                        <div
+                            class="h-12 w-12 rounded-lg bg-brand-100 text-brand-700 flex items-center justify-center font-semibold">
+                            A+</div>
                         <h3 class="mt-4 font-semibold text-gray-900">Strong Literacy & Numeracy</h3>
-                        <p class="mt-2 text-gray-700">Solid foundations in reading, writing, and mathematics from Primary to Senior Secondary.</p>
+                        <p class="mt-2 text-gray-700">Solid foundations in reading, writing, and mathematics from
+                            Primary to Senior Secondary.</p>
                     </div>
-                    <div class="rounded-xl border border-gray-200 bg-white p-6 shadow-sm">
-                        <div class="h-12 w-12 rounded-lg bg-emerald-100 text-emerald-700 flex items-center justify-center font-semibold">STEM</div>
+                    <div class="rounded-xl border border-gray-200 bg-white p-6 shadow-sm" data-aos="fade-up"
+                        data-aos-delay="100">
+                        <div
+                            class="h-12 w-12 rounded-lg bg-emerald-100 text-emerald-700 flex items-center justify-center font-semibold">
+                            STEM</div>
                         <h3 class="mt-4 font-semibold text-gray-900">Hands‑on STEM</h3>
-                        <p class="mt-2 text-gray-700">Science, technology, and practical projects that develop problem‑solving skills.</p>
+                        <p class="mt-2 text-gray-700">Science, technology, and practical projects that develop
+                            problem‑solving skills.</p>
                     </div>
-                    <div class="rounded-xl border border-gray-200 bg-white p-6 shadow-sm">
-                        <div class="h-12 w-12 rounded-lg bg-purple-100 text-purple-700 flex items-center justify-center font-semibold">Arts</div>
+                    <div class="rounded-xl border border-gray-200 bg-white p-6 shadow-sm" data-aos="fade-up"
+                        data-aos-delay="200">
+                        <div
+                            class="h-12 w-12 rounded-lg bg-purple-100 text-purple-700 flex items-center justify-center font-semibold">
+                            Arts</div>
                         <h3 class="mt-4 font-semibold text-gray-900">Arts, Sports & Pastoral Care</h3>
-                        <p class="mt-2 text-gray-700">Balanced growth through creative arts, athletics, and a supportive pastoral program.</p>
+                        <p class="mt-2 text-gray-700">Balanced growth through creative arts, athletics, and a supportive
+                            pastoral program.</p>
                     </div>
                 </div>
             </div>
@@ -111,10 +139,15 @@
     <section class="py-20 bg-gradient-to-br from-brand-50 via-white to-brand-100">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 class="text-3xl font-bold text-gray-900">Admissions Open</h2>
-            <p class="mt-4 text-lg text-gray-700 max-w-2xl mx-auto">Enroll your child for a transformative learning journey from Primary through Senior Secondary. We welcome curious minds and caring families.</p>
+            <p class="mt-4 text-lg text-gray-700 max-w-2xl mx-auto">Enroll your child for a transformative learning
+                journey from Primary through Senior Secondary. We welcome curious minds and caring families.</p>
             <div class="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="contact.html" class="inline-flex items-center justify-center rounded-md bg-brand-600 px-6 py-3 text-white font-medium shadow-sm hover:bg-brand-700">Book a Visit</a>
-                <a href="about.html" class="inline-flex items-center justify-center rounded-md border border-gray-300 px-6 py-3 text-gray-800 hover:bg-gray-100">Learn More</a>
+                <a href="contact.html"
+                    class="inline-flex items-center justify-center rounded-md bg-brand-600 px-6 py-3 text-white font-medium shadow-sm hover:bg-brand-700">Book
+                    a Visit</a>
+                <a href="about.html"
+                    class="inline-flex items-center justify-center rounded-md border border-gray-300 px-6 py-3 text-gray-800 hover:bg-gray-100">Learn
+                    More</a>
             </div>
         </div>
     </section>
@@ -124,12 +157,24 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 class="text-2xl font-bold text-gray-900 mb-8">Campus Life</h2>
             <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-                <div class="relative h-56"><img src="Images/IMG_20230705_130215_371.jpg" alt="Library" class="absolute inset-0 h-full w-full object-cover rounded-lg ring-1 ring-gray-200" loading="lazy"></div>
-                <div class="relative h-56"><img src="Images/IMG_20230705_125232_086.jpg" alt="Playground" class="absolute inset-0 h-full w-full object-cover rounded-lg ring-1 ring-gray-200" loading="lazy"></div>
-                <div class="relative h-56"><img src="Images/IMG_20230705_132106_192.jpg" alt="Cafeteria" class="absolute inset-0 h-full w-full object-cover rounded-lg ring-1 ring-gray-200" loading="lazy"></div>
-                <div class="relative h-56"><img src="Images/IMG_20230731_092334_117.jpg" alt="Classroom" class="absolute inset-0 h-full w-full object-cover rounded-lg ring-1 ring-gray-200" loading="lazy"></div>
-                <div class="relative h-56"><img src="Images/IMG_20230803_093421_561.jpg" alt="Students collaborating" class="absolute inset-0 h-full w-full object-cover rounded-lg ring-1 ring-gray-200" loading="lazy"></div>
-                <div class="relative h-56"><img src="Images/IMG_20230805_125409_366.jpg" alt="Activities" class="absolute inset-0 h-full w-full object-cover rounded-lg ring-1 ring-gray-200" loading="lazy"></div>
+                <div class="relative h-56"><img src="Images/IMG_20230705_130215_371.jpg" alt="Library"
+                        class="absolute inset-0 h-full w-full object-cover rounded-lg ring-1 ring-gray-200"
+                        loading="lazy"></div>
+                <div class="relative h-56"><img src="Images/IMG_20230705_125232_086.jpg" alt="Playground"
+                        class="absolute inset-0 h-full w-full object-cover rounded-lg ring-1 ring-gray-200"
+                        loading="lazy"></div>
+                <div class="relative h-56"><img src="Images/IMG_20230705_132106_192.jpg" alt="Cafeteria"
+                        class="absolute inset-0 h-full w-full object-cover rounded-lg ring-1 ring-gray-200"
+                        loading="lazy"></div>
+                <div class="relative h-56"><img src="Images/IMG_20230731_092334_117.jpg" alt="Classroom"
+                        class="absolute inset-0 h-full w-full object-cover rounded-lg ring-1 ring-gray-200"
+                        loading="lazy"></div>
+                <div class="relative h-56"><img src="Images/IMG_20230803_093421_561.jpg" alt="Students collaborating"
+                        class="absolute inset-0 h-full w-full object-cover rounded-lg ring-1 ring-gray-200"
+                        loading="lazy"></div>
+                <div class="relative h-56"><img src="Images/IMG_20230805_125409_366.jpg" alt="Activities"
+                        class="absolute inset-0 h-full w-full object-cover rounded-lg ring-1 ring-gray-200"
+                        loading="lazy"></div>
             </div>
         </div>
     </section>
@@ -141,15 +186,18 @@
             <div class="grid md:grid-cols-3 gap-6">
                 <div class="rounded-xl bg-white border border-gray-200 p-6 shadow-sm">
                     <h3 class="font-semibold text-gray-900">Pastoral Care</h3>
-                    <p class="mt-2 text-gray-700">Counseling, mentoring, and a caring environment where every child is known.</p>
+                    <p class="mt-2 text-gray-700">Counseling, mentoring, and a caring environment where every child is
+                        known.</p>
                 </div>
                 <div class="rounded-xl bg-white border border-gray-200 p-6 shadow-sm">
                     <h3 class="font-semibold text-gray-900">Clubs & Activities</h3>
-                    <p class="mt-2 text-gray-700">STEM club, music, arts, debate, and sports teams for whole‑child growth.</p>
+                    <p class="mt-2 text-gray-700">STEM club, music, arts, debate, and sports teams for whole‑child
+                        growth.</p>
                 </div>
                 <div class="rounded-xl bg-white border border-gray-200 p-6 shadow-sm">
                     <h3 class="font-semibold text-gray-900">Parent Partnership</h3>
-                    <p class="mt-2 text-gray-700">Regular updates, open days, and collaborative goal setting for learners.</p>
+                    <p class="mt-2 text-gray-700">Regular updates, open days, and collaborative goal setting for
+                        learners.</p>
                 </div>
             </div>
         </div>
@@ -159,29 +207,37 @@
     <section class="py-20 bg-white">
         <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 class="text-3xl font-bold text-gray-900">ELISAAC Model School</h2>
-            <p class="mt-6 text-lg text-gray-700 max-w-3xl mx-auto">A School Where GOD Dwells and Where GOD Himself Teaches The Students and Pupils Through the Teachers.</p>
+            <p class="mt-6 text-lg text-gray-700 max-w-3xl mx-auto">A School Where GOD Dwells and Where GOD Himself
+                Teaches The Students and Pupils Through the Teachers.</p>
             <p class="mt-4 italic text-brand-700 font-medium">“Oh Taste And See That The LORD Is Good” – Psalm 34:8</p>
-            <a href="contact.html" class="mt-8 inline-flex items-center rounded-md bg-brand-600 px-6 py-3 text-white font-medium shadow-sm hover:bg-brand-700">Visit Us To Know More</a>
+            <a href="contact.html"
+                class="mt-8 inline-flex items-center rounded-md bg-brand-600 px-6 py-3 text-white font-medium shadow-sm hover:bg-brand-700">Visit
+                Us To Know More</a>
         </div>
     </section>
 
     <!-- Programs Section -->
     <section class="py-16 bg-gray-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-2xl font-bold text-gray-900 mb-2">Programs We Offer</h2>
-            <p class="text-gray-700 mb-8">Foundational growth and academic excellence across all stages.</p>
+            <h2 class="text-2xl font-bold text-gray-900 mb-2">Nursery, Basic & Secondary</h2>
+            <p class="text-gray-700 mb-8">Clear pathways with age‑appropriate curriculum and caring mentorship.</p>
             <div class="grid md:grid-cols-3 gap-6">
-                <div class="rounded-xl border border-gray-200 bg-white p-6 shadow-sm flex flex-col">
-                    <h3 class="text-xl font-semibold text-gray-900">DayCare – Nursery</h3>
-                    <p class="mt-2 text-gray-700 flex-grow">Safe, joyful early years with play‑based learning and guided discovery.</p>
+                <div class="rounded-xl border border-gray-200 bg-white p-6 shadow-sm flex flex-col" data-aos="fade-up">
+                    <h3 class="text-xl font-semibold text-gray-900">Creche & Nursery</h3>
+                    <p class="mt-2 text-gray-700 flex-grow">Safe, joyful early years with play‑based learning and guided
+                        discovery.</p>
                 </div>
-                <div class="rounded-xl border border-gray-200 bg-white p-6 shadow-sm flex flex-col">
-                    <h3 class="text-xl font-semibold text-gray-900">Primary</h3>
-                    <p class="mt-2 text-gray-700 flex-grow">Solid literacy, numeracy, character formation, and curiosity‑driven projects.</p>
+                <div class="rounded-xl border border-gray-200 bg-white p-6 shadow-sm flex flex-col" data-aos="fade-up"
+                    data-aos-delay="100">
+                    <h3 class="text-xl font-semibold text-gray-900">Basic (Primary 1–6)</h3>
+                    <p class="mt-2 text-gray-700 flex-grow">Solid literacy, numeracy, character formation, and
+                        curiosity‑driven projects.</p>
                 </div>
-                <div class="rounded-xl border border-gray-200 bg-white p-6 shadow-sm flex flex-col">
+                <div class="rounded-xl border border-gray-200 bg-white p-6 shadow-sm flex flex-col" data-aos="fade-up"
+                    data-aos-delay="200">
                     <h3 class="text-xl font-semibold text-gray-900">Secondary</h3>
-                    <p class="mt-2 text-gray-700 flex-grow">Academic depth, exam readiness, leadership, and purposeful career guidance.</p>
+                    <p class="mt-2 text-gray-700 flex-grow">Academic depth, exam readiness, leadership, and purposeful
+                        career guidance.</p>
                 </div>
             </div>
         </div>
@@ -193,18 +249,24 @@
             <h2 class="text-2xl font-bold text-gray-900 mb-2">Our Facilities</h2>
             <p class="text-gray-700 mb-8">Designed for exploration, growth, and whole‑child development.</p>
             <div class="grid md:grid-cols-3 gap-6">
-                <div class="rounded-xl border border-gray-200 bg-white p-6 shadow-sm">
-                    <img src="Images/IMG_20230705_130215_371.jpg" alt="Reading corner" class="h-40 w-full object-cover rounded-md mb-4" loading="lazy">
+                <div class="rounded-xl border border-gray-200 bg-white p-6 shadow-sm" data-aos="fade-up">
+                    <img src="Images/IMG_20230705_130215_371.jpg" alt="Reading corner"
+                        class="h-40 w-full object-cover rounded-md mb-4" loading="lazy">
                     <h3 class="font-semibold text-gray-900">Study & Reading Area</h3>
                     <p class="mt-2 text-gray-700 text-sm">Calm space for focused study and guided reading practice.</p>
                 </div>
-                <div class="rounded-xl border border-gray-200 bg-white p-6 shadow-sm">
-                    <img src="Images/IMG_20230705_125232_086.jpg" alt="Outdoor activity" class="h-40 w-full object-cover rounded-md mb-4" loading="lazy">
+                <div class="rounded-xl border border-gray-200 bg-white p-6 shadow-sm" data-aos="fade-up"
+                    data-aos-delay="100">
+                    <img src="Images/IMG_20230705_125232_086.jpg" alt="Outdoor activity"
+                        class="h-40 w-full object-cover rounded-md mb-4" loading="lazy">
                     <h3 class="font-semibold text-gray-900">Active Play Zone</h3>
-                    <p class="mt-2 text-gray-700 text-sm">Outdoor physical activities encouraging health, balance and teamwork.</p>
+                    <p class="mt-2 text-gray-700 text-sm">Outdoor physical activities encouraging health, balance and
+                        teamwork.</p>
                 </div>
-                <div class="rounded-xl border border-gray-200 bg-white p-6 shadow-sm">
-                    <img src="Images/IMG_20230705_132106_192.jpg" alt="Meal & break area" class="h-40 w-full object-cover rounded-md mb-4" loading="lazy">
+                <div class="rounded-xl border border-gray-200 bg-white p-6 shadow-sm" data-aos="fade-up"
+                    data-aos-delay="200">
+                    <img src="Images/IMG_20230705_132106_192.jpg" alt="Meal & break area"
+                        class="h-40 w-full object-cover rounded-md mb-4" loading="lazy">
                     <h3 class="font-semibold text-gray-900">Meals & Refreshments</h3>
                     <p class="mt-2 text-gray-700 text-sm">Nutritious breaks supporting energy, focus and wellbeing.</p>
                 </div>
@@ -215,28 +277,33 @@
     <!-- Testimonials Section -->
     <section class="py-16">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-2xl font-bold text-gray-900 mb-2">What Our Students Say</h2>
+            <h2 class="text-2xl font-bold text-gray-900 mb-2" data-aos="fade-up">What Our Students Say</h2>
             <p class="text-gray-700 mb-8">Voices from our learning community.</p>
             <div class="grid md:grid-cols-2 gap-8">
-                <div class="rounded-xl border border-gray-200 bg-white p-6 shadow-sm flex flex-col">
+                <div class="rounded-xl border border-gray-200 bg-white p-6 shadow-sm flex flex-col" data-aos="fade-up">
                     <div class="flex items-center gap-4">
-                        <img src="eduford_img/user1.jpg" alt="Student" class="h-14 w-14 rounded-full object-cover" loading="lazy">
+                        <img src="eduford_img/user1.jpg" alt="Student" class="h-14 w-14 rounded-full object-cover"
+                            loading="lazy">
                         <div>
                             <p class="font-semibold text-gray-900">Christine Berley</p>
                             <p class="text-sm text-gray-600">Secondary Student</p>
                         </div>
                     </div>
-                    <p class="mt-4 text-gray-700 text-sm">“Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque explicabo alias temporibus, aliquam tenetur odio aspernatur ducimus obcaecati.”</p>
+                    <p class="mt-4 text-gray-700 text-sm">“Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Neque explicabo alias temporibus, aliquam tenetur odio aspernatur ducimus obcaecati.”</p>
                 </div>
-                <div class="rounded-xl border border-gray-200 bg-white p-6 shadow-sm flex flex-col">
+                <div class="rounded-xl border border-gray-200 bg-white p-6 shadow-sm flex flex-col" data-aos="fade-up"
+                    data-aos-delay="100">
                     <div class="flex items-center gap-4">
-                        <img src="eduford_img/user2.jpg" alt="Student" class="h-14 w-14 rounded-full object-cover" loading="lazy">
+                        <img src="eduford_img/user2.jpg" alt="Student" class="h-14 w-14 rounded-full object-cover"
+                            loading="lazy">
                         <div>
                             <p class="font-semibold text-gray-900">David Byer</p>
                             <p class="text-sm text-gray-600">Primary Pupil</p>
                         </div>
                     </div>
-                    <p class="mt-4 text-gray-700 text-sm">“Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque explicabo alias temporibus, aliquam tenetur odio aspernatur ducimus obcaecati.”</p>
+                    <p class="mt-4 text-gray-700 text-sm">“Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Neque explicabo alias temporibus, aliquam tenetur odio aspernatur ducimus obcaecati.”</p>
                 </div>
             </div>
         </div>
@@ -244,10 +311,13 @@
 
     <!-- Enrollment CTA -->
     <section class="py-20 bg-gradient-to-r from-brand-600 to-brand-700 text-white">
-        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center" data-aos="fade-up">
             <h2 class="text-3xl font-bold">Enroll For Our Various Online Courses</h2>
-            <p class="mt-4 text-brand-100 max-w-2xl mx-auto">Anywhere from the world — flexible enrichment and academic boost programs supporting core classroom learning.</p>
-            <a href="contact.html" class="mt-8 inline-flex items-center rounded-md bg-white/10 backdrop-blur px-6 py-3 font-medium hover:bg-white/20">Contact Us</a>
+            <p class="mt-4 text-brand-100 max-w-2xl mx-auto">Anywhere from the world — flexible enrichment and academic
+                boost programs supporting core classroom learning.</p>
+            <a href="contact.html"
+                class="mt-8 inline-flex items-center rounded-md bg-white/10 backdrop-blur px-6 py-3 font-medium hover:bg-white/20">Contact
+                Us</a>
         </div>
     </section>
 
@@ -256,8 +326,10 @@
             <div class="grid md:grid-cols-4 gap-10">
                 <div class="md:col-span-2">
                     <h3 class="font-semibold text-gray-900 text-lg">Elisaac Schools</h3>
-                    <p class="mt-2 text-gray-700 text-sm max-w-md">Shaping tomorrow's leaders today. A School Where GOD Dwells and Where GOD Himself Teaches The Students and Pupils Through the Teachers.</p>
-                    <p class="mt-3 italic text-sm text-brand-700">“Oh Taste And See That The LORD Is Good” – Psalm 34:8</p>
+                    <p class="mt-2 text-gray-700 text-sm max-w-md">Shaping tomorrow's leaders today. A School Where GOD
+                        Dwells and Where GOD Himself Teaches The Students and Pupils Through the Teachers.</p>
+                    <p class="mt-3 italic text-sm text-brand-700">“Oh Taste And See That The LORD Is Good” – Psalm 34:8
+                    </p>
                 </div>
                 <div>
                     <h4 class="font-semibold text-gray-900">Quick Links</h4>
@@ -272,14 +344,19 @@
                 <div>
                     <h4 class="font-semibold text-gray-900">Connect</h4>
                     <div class="mt-3 flex gap-3">
-                        <a href="#" aria-label="Facebook" class="h-9 w-9 inline-flex items-center justify-center rounded-md bg-brand-600 text-white hover:bg-brand-700">F</a>
-                        <a href="#" aria-label="Twitter" class="h-9 w-9 inline-flex items-center justify-center rounded-md bg-brand-600 text-white hover:bg-brand-700">T</a>
-                        <a href="#" aria-label="Instagram" class="h-9 w-9 inline-flex items-center justify-center rounded-md bg-brand-600 text-white hover:bg-brand-700">I</a>
-                        <a href="#" aria-label="LinkedIn" class="h-9 w-9 inline-flex items-center justify-center rounded-md bg-brand-600 text-white hover:bg-brand-700">Ln</a>
+                        <a href="#" aria-label="Facebook"
+                            class="h-9 w-9 inline-flex items-center justify-center rounded-md bg-brand-600 text-white hover:bg-brand-700">F</a>
+                        <a href="#" aria-label="Twitter"
+                            class="h-9 w-9 inline-flex items-center justify-center rounded-md bg-brand-600 text-white hover:bg-brand-700">T</a>
+                        <a href="#" aria-label="Instagram"
+                            class="h-9 w-9 inline-flex items-center justify-center rounded-md bg-brand-600 text-white hover:bg-brand-700">I</a>
+                        <a href="#" aria-label="LinkedIn"
+                            class="h-9 w-9 inline-flex items-center justify-center rounded-md bg-brand-600 text-white hover:bg-brand-700">Ln</a>
                     </div>
                 </div>
             </div>
-            <div class="mt-10 pt-6 border-t border-gray-200 text-center text-sm text-gray-600">© <span id="year"></span> Elisaac Schools. All rights reserved.</div>
+            <div class="mt-10 pt-6 border-t border-gray-200 text-center text-sm text-gray-600">© <span id="year"></span>
+                Elisaac Schools. All rights reserved.</div>
         </div>
     </footer>
     <script>
@@ -290,5 +367,10 @@
             menu.classList.toggle('hidden');
         });
     </script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({ once: true, duration: 700, easing: 'ease-out-cubic' });
+    </script>
 </body>
+
 </html>

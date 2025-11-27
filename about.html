@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>University Website Design - EXCEL</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/x-icon" href="Images/logo-removebg-preview.png">
     <link rel="preconnect" href="httpd://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?
     family=poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
@@ -19,14 +18,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#111827">
     <title>Elisaac Schools — About</title>
+    <link rel="icon" type="image/svg+xml" href="Images/elisaac-logo.svg">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
 <body class="min-h-screen bg-gray-50 text-gray-800">
     <header class="sticky top-0 z-40 backdrop-blur bg-white/80 border-b border-gray-200">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-16">
                 <a href="index.html" class="flex items-center gap-2">
-                    <img src="eduford_img/logo.png" alt="Elisaac Schools" class="h-9 w-9 object-contain">
+                    <img src="Images/elisaac-logo.svg" alt="Elisaac Schools" class="h-10 w-10 object-contain">
                     <span class="font-semibold text-gray-900">Elisaac Schools</span>
                 </a>
                 <nav class="hidden md:flex items-center gap-6" aria-label="Primary">
@@ -58,7 +59,7 @@
             <!-- Intro / Mission -->
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="grid lg:grid-cols-2 gap-10 items-start">
-                    <div>
+                    <div data-aos="fade-up">
                         <h1 class="text-3xl font-bold text-gray-900">About Elisaac Schools</h1>
                         <p class="mt-4 text-gray-700">A faith-rooted primary and secondary learning community committed to academic excellence, character formation, and joyful discovery.</p>
                         <div class="mt-8 grid md:grid-cols-2 gap-6">
@@ -72,7 +73,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="relative h-[360px] sm:h-[420px]">
+                    <div class="relative h-[360px] sm:h-[420px]" data-aos="zoom-in">
                         <img src="Images/IMG_20230803_093421_561.jpg" alt="Students collaborating" class="absolute inset-0 h-full w-full rounded-xl shadow-lg ring-1 ring-gray-200 object-cover" loading="lazy">
                     </div>
                 </div>
@@ -84,15 +85,15 @@
                     <h2 class="text-2xl font-bold text-gray-900">Our Philosophy & Approach</h2>
                     <p class="mt-4 text-gray-700 max-w-3xl">We believe every child is uniquely gifted. Learning at Elisaac blends rigorous academics with creativity, service, and spiritual growth. Lessons emphasize problem solving, collaboration, and real‑world relevance so learners connect knowledge to purpose.</p>
                     <div class="mt-8 grid md:grid-cols-3 gap-6">
-                        <div class="rounded-xl bg-white border border-gray-200 p-6 shadow-sm">
+                        <div class="rounded-xl bg-white border border-gray-200 p-6 shadow-sm" data-aos="fade-up">
                             <h3 class="font-semibold text-gray-900">Holistic Development</h3>
                             <p class="mt-2 text-sm text-gray-700">Academic, social-emotional, physical and spiritual growth planned intentionally.</p>
                         </div>
-                        <div class="rounded-xl bg-white border border-gray-200 p-6 shadow-sm">
+                        <div class="rounded-xl bg-white border border-gray-200 p-6 shadow-sm" data-aos="fade-up" data-aos-delay="100">
                             <h3 class="font-semibold text-gray-900">Active Learning</h3>
                             <p class="mt-2 text-sm text-gray-700">Projects, debates, labs and guided inquiry energize curiosity.</p>
                         </div>
-                        <div class="rounded-xl bg-white border border-gray-200 p-6 shadow-sm">
+                        <div class="rounded-xl bg-white border border-gray-200 p-6 shadow-sm" data-aos="fade-up" data-aos-delay="200">
                             <h3 class="font-semibold text-gray-900">Faith & Character</h3>
                             <p class="mt-2 text-sm text-gray-700">Daily routines reinforce respect, service, gratitude and responsibility.</p>
                         </div>
@@ -103,7 +104,7 @@
             <!-- Community & Partnership -->
             <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="grid lg:grid-cols-2 gap-10 items-stretch">
-                    <div class="rounded-xl border border-gray-200 bg-white p-8 shadow-sm flex flex-col justify-between">
+                    <div class="rounded-xl border border-gray-200 bg-white p-8 shadow-sm flex flex-col justify-between" data-aos="fade-right">
                         <div>
                             <h2 class="text-2xl font-bold text-gray-900">Community & Partnership</h2>
                             <p class="mt-4 text-gray-700">Families, teachers, and students collaborate through open days, goal conferences, service projects and celebration assemblies.</p>
@@ -116,7 +117,7 @@
                         </div>
                         <a href="contact.html" class="mt-8 inline-flex items-center rounded-md bg-brand-600 px-5 py-3 text-white font-medium hover:bg-brand-700 w-max">Partner With Us</a>
                     </div>
-                    <div class="rounded-xl border border-gray-200 bg-white p-8 shadow-sm">
+                    <div class="rounded-xl border border-gray-200 bg-white p-8 shadow-sm" data-aos="fade-left">
                         <h2 class="text-2xl font-bold text-gray-900">Growth Timeline</h2>
                         <div class="mt-6 space-y-5">
                             <div class="flex gap-4">
@@ -162,6 +163,10 @@
         const btn = document.getElementById('mobileMenuBtn');
         const menu = document.getElementById('mobileMenu');
         btn?.addEventListener('click', () => menu.classList.toggle('hidden'));
+    </script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({ once: true, duration: 700, easing: 'ease-out-cubic' });
     </script>
 </body>
 </html>
